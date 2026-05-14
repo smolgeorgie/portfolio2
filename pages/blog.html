@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs — Ilona van Oosbree</title>
+  <meta name="description" content="Blogs van Ilona van Oosbree — Frontend Designer &amp; Developer" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" href="../images/ilona.jpg" type="image/jpeg" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav aria-label="Hoofdnavigatie">
+    <div class="nav-wrapper">
+      <div class="banner-content">
+        <div class="banner-logo">
+          <strong style="font-size:1.1rem;color:#555;font-family:Verdana,sans-serif;">aliva in werk</strong>
+        </div>
+        <div class="banner-links">
+          <ul>
+            <li><a href="../index.html">Ilona</a></li>
+            <li><a href="#status">Online</a></li>
+            <li><a href="#" aria-label="Taal wisselen">English</a></li>
+          </ul>
+          <img src="../images/ilona.jpg" alt="Profielfoto Ilona" class="banner-avatar" width="40" height="40" />
+        </div>
+      </div>
+      <nav class="top-nav" aria-label="Secties">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html#profiel">Profiel</a></li>
+          <li><a href="werk.html">Mijn werk</a></li>
+          <li><a href="fotos.html">Foto's</a></li>
+          <li><a href="blog.html" class="active" aria-current="page">Blogs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </nav>
+
+  <!-- CONTENT -->
+  <div class="page-wrapper">
+    <h1 class="page-title">Blogs</h1>
+
+    <div class="full-page-wrapper">
+
+      <!-- Tab sub-nav -->
+      <nav class="tabs" aria-label="Content type">
+        <a href="blog.html" class="tab-link active" aria-current="page">📝 Blogs</a>
+        <a href="fotos.html" class="tab-link">📷 Foto's</a>
+        <a href="posters.html" class="tab-link">🎨 Posters</a>
+      </nav>
+
+      <section class="blogs-list-page" aria-label="Bloglijst">
+
+        <ul class="blog-list" aria-label="Alle blogposts">
+
+          <!-- Milledoni post -->
+          <li class="blog-list-item">
+            <a href="blog-milledoni.html" aria-label="Lees: Milledoni — AI Prompt Generator">
+              <img src="../images/milledoni.webp" alt="Milledoni project thumbnail" class="blog-thumb" width="100" height="100" loading="lazy" />
+              <div>
+                <h2>Milledoni — AI Prompt Generator</h2>
+                <p>Een deep-dive in de bouw van de Milledoni gift-finder, inclusief AI-integratie en UX-overwegingen.</p>
+                <time datetime="2025-01-15">15 jan 2025</time>
+              </div>
+            </a>
+          </li>
+
+          <!-- Paer Studio post -->
+          <li class="blog-list-item">
+            <a href="blog-paerstudio.html" aria-label="Lees: Paer Studio — Samen bouwen aan een creatief bureau">
+              <img src="../images/paerstudio.webp" alt="Paer Studio website thumbnail" class="blog-thumb" width="100" height="100" loading="lazy" />
+              <div>
+                <h2>Paer Studio — Samen bouwen aan een creatief bureau</h2>
+                <p>Hoe we de website voor Paer Studio hebben ontworpen en ontwikkeld, van schets tot live omgeving.</p>
+                <time datetime="2025-03-10">10 mrt 2025</time>
+              </div>
+            </a>
+          </li>
+
+          <!-- FDND post -->
+          <li class="blog-list-item">
+            <a href="blog-fdnd.html" aria-label="Lees: FDND Programma Website — Een open-source curriculumsite">
+              <img src="../images/fdndwebsite.webp" alt="FDND Website thumbnail" class="blog-thumb" width="100" height="100" loading="lazy" />
+              <div>
+                <h2>FDND Programma Website</h2>
+                <p>Het ontwerp en de ontwikkeling van de curriculumsite voor de opleiding Frontend Design &amp; Development.</p>
+                <time datetime="2025-05-01">1 mei 2025</time>
+              </div>
+            </a>
+          </li>
+
+        </ul>
+      </section>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>© 2025 Ilona van Oosbree — Portfolio. Gebouwd met ❤️ en pure HTML &amp; CSS.</p>
+  </footer>
+
+</body>
+</html>
