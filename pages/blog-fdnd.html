@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl"
+      data-title-nl="FDND Programma Website: Ilona van Oosbree"
+      data-title-en="FDND Programme Website: Ilona van Oosbree">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FDND Programma Website — Ilona van Oosbree</title>
+  <title>FDND Programma Website: Ilona van Oosbree</title>
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../images/ilona.jpg" type="image/jpeg" />
 </head>
@@ -18,18 +20,18 @@
           <ul>
             <li><a href="../index.html">Ilona</a></li>
             <li><a href="#status">Online</a></li>
-            <li><a href="#" aria-label="Taal wisselen">English</a></li>
+            <li><a href="#" class="lang-toggle" aria-label="Taal wisselen">English</a></li>
           </ul>
           <img src="../images/ilona.jpg" alt="Profielfoto Ilona" class="banner-avatar" width="40" height="40" />
         </div>
       </div>
       <nav class="top-nav" aria-label="Secties">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#profiel">Profiel</a></li>
-          <li><a href="werk.html">Mijn werk</a></li>
-          <li><a href="fotos.html">Foto's</a></li>
-          <li><a href="blog.html" class="active">Blogs</a></li>
+          <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="werk.html" data-i18n="nav.my-work">Mijn werk</a></li>
+          <li><a href="fotos.html" data-i18n="nav.photos">Foto's</a></li>
+          <li><a href="blog.html" class="active" data-i18n="nav.blogs">Blogs</a></li>
+          <li><a href="posters.html" data-i18n="nav.posters">Posters</a></li>
         </ul>
       </nav>
     </div>
@@ -39,7 +41,7 @@
     <h1 class="page-title">Blog</h1>
     <div class="full-page-wrapper">
       <article class="blog-post-page">
-        <a href="blog.html" class="blog-back-link">← Terug naar blogs</a>
+        <a href="blog.html" class="blog-back-link" data-i18n="blog.back">← Terug naar blogs</a>
 
         <h1>FDND Programma Website</h1>
         <p class="post-meta">
@@ -63,7 +65,7 @@
           <h2>Toegankelijkheid als uitgangspunt</h2>
           <p>
             WCAG-richtlijnen stonden centraal in het ontwerp. Kleurbeheer, focusmanagement en een logische
-            heading-structuur zijn geen afterthought maar gebakken in het ontwerp vanaf dag één.
+            heading-structuur zijn geen afterthought, maar gebakken in het ontwerp vanaf dag één.
           </p>
 
           <p>
@@ -76,7 +78,10 @@
   </div>
 
   <footer class="site-footer">
-    <p>© 2025 Ilona van Oosbree — Portfolio. Gebouwd met ❤️ en pure HTML &amp; CSS.</p>
+    <p data-i18n-html="footer.text">© 2025 Ilona van Oosbree. Gebouwd met ❤️ en pure HTML &amp; CSS.</p>
+    <p><button class="lang-toggle footer-lang-btn" aria-label="Taal wisselen">English</button></p>
   </footer>
+
+  <script src="../lang.js"></script>
 </body>
 </html>

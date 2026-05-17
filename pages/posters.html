@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl"
+      data-title-nl="Posters: Ilona van Oosbree"
+      data-title-en="Posters: Ilona van Oosbree">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Posters — Ilona van Oosbree</title>
+  <title>Posters: Ilona van Oosbree</title>
   <meta name="description" content="Poster- en grafisch ontwerpwerk van Ilona van Oosbree" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../images/ilona.jpg" type="image/jpeg" />
@@ -21,18 +23,18 @@
           <ul>
             <li><a href="../index.html">Ilona</a></li>
             <li><a href="#status">Online</a></li>
-            <li><a href="#" aria-label="Taal wisselen">English</a></li>
+            <li><a href="#" class="lang-toggle" aria-label="Taal wisselen">English</a></li>
           </ul>
           <img src="../images/ilona.jpg" alt="Profielfoto Ilona" class="banner-avatar" width="40" height="40" />
         </div>
       </div>
       <nav class="top-nav" aria-label="Secties">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#profiel">Profiel</a></li>
-          <li><a href="werk.html">Mijn werk</a></li>
-          <li><a href="fotos.html">Foto's</a></li>
-          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="werk.html" data-i18n="nav.my-work">Mijn werk</a></li>
+          <li><a href="fotos.html" data-i18n="nav.photos">Foto's</a></li>
+          <li><a href="blog.html" data-i18n="nav.blogs">Blogs</a></li>
+          <li><a href="posters.html" class="active" aria-current="page" data-i18n="nav.posters">Posters</a></li>
         </ul>
       </nav>
     </div>
@@ -40,36 +42,35 @@
 
   <!-- CONTENT -->
   <div class="page-wrapper">
-    <h1 class="page-title">Foto's &amp; Posters</h1>
+    <h1 class="page-title" data-i18n="nav.posters">Posters</h1>
 
     <div class="full-page-wrapper">
 
       <!-- Tab sub-nav -->
       <nav class="tabs" aria-label="Content type">
-        <a href="blog.html" class="tab-link">📝 Blogs</a>
-        <a href="fotos.html" class="tab-link">📷 Foto's</a>
-        <a href="posters.html" class="tab-link active" aria-current="page">🎨 Posters</a>
+        <a href="blog.html" class="tab-link" data-i18n="tab.blogs">📝 Blogs</a>
+        <a href="fotos.html" class="tab-link" data-i18n="tab.photos">📷 Foto's</a>
+        <a href="posters.html" class="tab-link active" aria-current="page" data-i18n="tab.posters">🎨 Posters</a>
       </nav>
 
       <section class="posters-page" aria-label="Poster galerij">
-        <h1>Poster &amp; Grafisch Ontwerp</h1>
+        <h1 data-i18n="posters.section-title">Poster &amp; Grafisch Ontwerp</h1>
 
-        <p style="font-size:0.9rem;color:#555;margin-bottom:1rem;">
+        <p style="font-size:0.9rem;color:#555;margin-bottom:1rem;" data-i18n="posters.description">
           Naast digitale producten ontwerp ik ook grafische materialen zoals posters, flyers en
           andere printproducten. Hieronder een selectie van mijn grafisch werk.
         </p>
 
-        <!-- Poster gallery — voeg je eigen posters toe in de images/ map -->
         <div class="poster-grid" aria-label="Poster galerij">
 
           <figure>
             <img src="../images/milledoni-aiprompt.webp" alt="Milledoni AI Prompt poster" loading="lazy" />
-            <figcaption>Milledoni — AI Prompt</figcaption>
+            <figcaption>Milledoni: AI Prompt</figcaption>
           </figure>
 
           <figure>
             <img src="../images/milledoni-searchresult.webp" alt="Milledoni zoekresultaten" loading="lazy" />
-            <figcaption>Milledoni — Resultaten</figcaption>
+            <figcaption>Milledoni: Resultaten</figcaption>
           </figure>
 
           <figure>
@@ -79,17 +80,15 @@
 
         </div>
 
-        <p style="font-size:0.8rem;color:#888;margin-top:1.5rem;">
-          📌 <em>Voeg je posterafbeeldingen toe in de <code>images/</code> map en update de HTML om ze hier te tonen.</em>
-        </p>
-
       </section>
     </div>
   </div>
 
   <footer class="site-footer">
-    <p>© 2025 Ilona van Oosbree — Portfolio. Gebouwd met ❤️ en pure HTML &amp; CSS.</p>
+    <p data-i18n-html="footer.text">© 2025 Ilona van Oosbree. Gebouwd met ❤️ en pure HTML &amp; CSS.</p>
+    <p><button class="lang-toggle footer-lang-btn" aria-label="Taal wisselen">English</button></p>
   </footer>
 
+  <script src="../lang.js"></script>
 </body>
 </html>

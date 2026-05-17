@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl"
+      data-title-nl="Ilona van Oosbree: Portfolio"
+      data-title-en="Ilona van Oosbree: Portfolio">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ilona van Oosbree — Portfolio</title>
-  <meta name="description" content="Portfolio van Ilona van Oosbree — Frontend Designer &amp; Developer" />
+  <title>Ilona van Oosbree: Portfolio</title>
+  <meta name="description" content="Portfolio van Ilona van Oosbree, Frontend Designer &amp; Developer" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="icon" href="images/ilona.jpg" type="image/jpeg" />
 </head>
@@ -18,7 +20,6 @@
 
       <!-- Banner row -->
       <div class="banner-content">
-        <!-- Logo (inline SVG from original project) -->
         <div class="banner-logo" aria-label="Aliva in werk logo">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                width="220" height="35" viewBox="0 0 281.25 44.249999"
@@ -37,16 +38,14 @@
               <g transform="translate(72.249347, 33.494653)"><path style="stroke:none" d="M 1.546875 -4.21875 C 1.554688 -3.707031 1.566406 -3.191406 1.578125 -2.671875 C 1.597656 -2.160156 1.609375 -1.648438 1.609375 -1.140625 C 1.609375 -0.984375 1.597656 -0.828125 1.578125 -0.671875 C 1.554688 -0.523438 1.515625 -0.382812 1.453125 -0.25 C 1.390625 -0.0703125 1.273438 0.015625 1.109375 0.015625 C 0.953125 0.0234375 0.828125 -0.0507812 0.734375 -0.21875 C 0.597656 -0.445312 0.53125 -0.691406 0.53125 -0.953125 L 0.53125 -3.03125 C 0.53125 -3.488281 0.535156 -3.957031 0.546875 -4.4375 C 0.554688 -4.925781 0.5625 -5.394531 0.5625 -5.84375 C 0.570312 -6.300781 0.578125 -6.707031 0.578125 -7.0625 C 0.585938 -7.414062 0.59375 -7.6875 0.59375 -7.875 C 0.59375 -8.009375 0.601562 -8.148438 0.625 -8.328125 C 0.65625 -8.378906 0.695312 -8.441406 0.75 -8.515625 C 0.8125 -8.585938 0.867188 -8.625 0.921875 -8.625 C 0.992188 -8.625 1.070312 -8.597656 1.15625 -8.546875 C 1.25 -8.503906 1.304688 -8.453125 1.328125 -8.390625 C 1.414062 -8.148438 1.484375 -7.757812 1.484375 -7.625 C 1.503906 -7.0625 1.515625 -6.492188 1.515625 -5.921875 C 1.523438 -5.359375 1.535156 -4.789062 1.546875 -4.21875 Z"/></g>
               </g>
             </g>
-            <!-- "aliva in werk" text as simple fallback text if SVG paths don't render -->
           </svg>
         </div>
 
-        <!-- Links top-right -->
         <div class="banner-links">
           <ul>
             <li><a href="index.html">Ilona</a></li>
             <li><a href="#status">Online</a></li>
-            <li><a href="#" id="lang-toggle" aria-label="Taal wisselen">English</a></li>
+            <li><a href="#" class="lang-toggle" aria-label="Taal wisselen">English</a></li>
           </ul>
           <img src="images/ilona.jpg" alt="Profielfoto Ilona" class="banner-avatar" width="40" height="40" />
         </div>
@@ -55,11 +54,11 @@
       <!-- Top nav tabs -->
       <nav class="top-nav" aria-label="Secties">
         <ul>
-          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
-          <li><a href="index.html#profiel">Profiel</a></li>
-          <li><a href="pages/werk.html">Mijn werk</a></li>
-          <li><a href="pages/fotos.html">Foto's</a></li>
-          <li><a href="pages/blog.html">Blogs</a></li>
+          <li><a href="index.html" class="active" aria-current="page" data-i18n="nav.home">Home</a></li>
+          <li><a href="pages/werk.html" data-i18n="nav.my-work">Mijn werk</a></li>
+          <li><a href="pages/fotos.html" data-i18n="nav.photos">Foto's</a></li>
+          <li><a href="pages/blog.html" data-i18n="nav.blogs">Blogs</a></li>
+          <li><a href="pages/posters.html" data-i18n="nav.posters">Posters</a></li>
         </ul>
       </nav>
 
@@ -80,12 +79,10 @@
              ================================================ -->
         <aside class="side-nav" aria-label="Profiel sidebar">
 
-          <!-- Profile photo -->
           <div class="profile-img-wrap">
             <img src="images/ilona.jpg" alt="Ilona van Oosbree" width="150" height="150" />
           </div>
 
-          <!-- Quick links -->
           <ul aria-label="Contactlinks">
             <li>
               <a href="mailto:ilonavanoosbree@live.nl?subject=Get%20In%20Touch&amp;body=I%20would%20like%20to%20get%20in%20touch.">
@@ -104,9 +101,8 @@
             </li>
           </ul>
 
-          <!-- Krabbels section -->
           <section class="krabbels" aria-label="Krabbels">
-            <h3>💬 Krabbels</h3>
+            <h3 data-i18n="krabbels.title">💬 Krabbels</h3>
 
             <div class="krabbels-list" id="krabbels-list" aria-live="polite">
               <!-- Rendered by krabbels.js -->
@@ -119,6 +115,7 @@
                 id="krabbel-name"
                 name="krabbel-name"
                 placeholder="Jouw naam"
+                data-i18n-placeholder="krabbels.placeholder-name"
                 maxlength="40"
                 required
                 aria-required="true"
@@ -127,13 +124,14 @@
               <textarea
                 id="krabbel-msg"
                 name="krabbel-msg"
-                placeholder="Laat een berichtje achter..."
+                placeholder="Laat een berichtje achter…"
+                data-i18n-placeholder="krabbels.placeholder-msg"
                 maxlength="200"
                 required
                 aria-required="true"
                 rows="3"
               ></textarea>
-              <button type="submit">Krabbel sturen 📨</button>
+              <button type="submit" data-i18n="krabbels.submit">Krabbel sturen 📨</button>
             </form>
           </section>
 
@@ -144,11 +142,10 @@
              ================================================ -->
         <section class="intro-container" id="profiel" aria-label="Over mij">
 
-          <!-- Bio block -->
           <div class="bio-container">
-            <h2 class="section-heading">WieWatWaar?</h2>
+            <h2 class="section-heading" data-i18n="index.who-what-where">WieWatWaar?</h2>
             <div class="description-bio" lang="nl">
-              <p>
+              <p data-i18n="index.bio">
                 Welkom! Ik ben Ilona, een afgestudeerde marketeer en frontend designer &amp; developer.
                 In 2025 heb ik mijn opleiding Frontend Design &amp; Development afgerond aan de
                 Hogeschool van Amsterdam, met een extra curriculum in Cybersecurity. Door mijn
@@ -157,47 +154,43 @@
                 mijn skills bij te houden en heb ik steeds meer interesse gekregen in alles wat
                 met computers te maken heeft. Ik ben misschien nog een beginner, maar een
                 uitdaging ga ik nooit uit de weg! Naast alle technische snufjes houd ik me ook
-                graag bezig met creatieve projecten — niet alleen het ontwerpen van websites en
+                graag bezig met creatieve projecten, niet alleen het ontwerpen van websites en
                 posters, maar ook fotografie. Neem gerust een kijkje in mijn portfolio!
               </p>
             </div>
           </div>
 
-          <!-- Profile facts -->
-          <h2 class="section-heading">Profiel</h2>
+          <h2 class="section-heading" data-i18n="index.profile-heading">Profiel</h2>
           <div class="intro">
 
-            <!-- Music player -->
             <div class="music-player" role="region" aria-label="Muziekspeler">
-              <span class="music-label">🎵 Nu luisteren:</span>
+              <span class="music-label" data-i18n="index.music-label">🎵 Nu luisteren:</span>
               <audio controls preload="none" aria-label="Achtergrondmuziek">
                 <source src="" type="audio/mpeg" />
-                Jouw browser ondersteunt geen audio.
+                <span data-i18n="audio.fallback">Jouw browser ondersteunt geen audio.</span>
               </audio>
             </div>
 
-            <!-- Fact list 1 -->
             <ul aria-label="Persoonlijke gegevens">
               <li>
                 <img src="gifs/smiley_hollandyell.gif" alt="Smiley" width="20" height="20"
                      style="display:inline;vertical-align:middle;margin-right:0.3rem" />
               </li>
-              <li><b>Naam:</b> Ilona van Oosbree</li>
-              <li><b>Leeftijd:</b> 24</li>
-              <li><b>Woonplaats:</b> Amsterdam &amp; Rotterdam</li>
+              <li><b data-i18n="label.name">Naam:</b> Ilona van Oosbree</li>
+              <li><b data-i18n="label.age">Leeftijd:</b> 24</li>
+              <li><b data-i18n="label.location">Woonplaats:</b> Amsterdam &amp; Rotterdam</li>
             </ul>
 
-            <!-- Fact list 2 -->
             <ul aria-label="Professionele gegevens">
-              <li><b>Bedrijf:</b> Paer Studio</li>
-              <li><b>Functie:</b> Frontend Developer</li>
+              <li><b data-i18n="label.company">Bedrijf:</b> Paer Studio</li>
+              <li><b data-i18n="label.role">Functie:</b> Frontend Developer</li>
               <li>
-                <b>MBO / HBO:</b>
+                <b data-i18n="label.education">MBO / HBO:</b>
                 HBO Frontend Design and Development &amp;
                 MBO Marketing, Journalistiek en Communicatie
               </li>
-              <li><b>Scholen:</b> Hogeschool van Amsterdam &amp; MBO College Utrecht</li>
-              <li><b>Passies:</b> Programmeren, Designen, Fotografie</li>
+              <li><b data-i18n="label.schools">Scholen:</b> Hogeschool van Amsterdam &amp; MBO College Utrecht</li>
+              <li><b data-i18n="label.passions">Passies:</b> <span data-i18n="value.passions">Programmeren, Designen, Fotografie</span></li>
             </ul>
 
           </div><!-- /intro -->
@@ -207,7 +200,7 @@
              COLUMN 3 — My Work
              ================================================ -->
         <section class="work-wrapper" aria-label="Mijn werk">
-          <h2 class="section-heading">Mijn werk</h2>
+          <h2 class="section-heading" data-i18n="index.my-work-heading">Mijn werk</h2>
 
           <ul class="blog-posts-grid">
 
@@ -223,19 +216,19 @@
                   Credit Card
                 </a>
               </h3>
-              <span class="blog-post-tag">Desktop only</span>
+              <span class="blog-post-tag" data-i18n="tag.desktop-only">Desktop only</span>
             </li>
 
             <li class="blog-post-item">
               <article class="blog-post-card">
-                <a href="pages/blog-milledoni.html" aria-label="Milledoni blogpost lezen">
+                <a href="https://milledoni.nl/" target="_blank" rel="noopener noreferrer"
+                   aria-label="Milledoni website bekijken (opent in nieuw tabblad)">
                   <img src="images/milledoni.webp" alt="Milledoni project" width="300" height="300" loading="lazy" />
                 </a>
               </article>
               <h3 class="blog-post-title">
-                <a href="pages/blog-milledoni.html">Milledoni</a>
+                <a href="https://milledoni.nl/" target="_blank" rel="noopener noreferrer">Milledoni</a>
               </h3>
-              <span class="blog-post-tag">Blog</span>
             </li>
 
             <li class="blog-post-item">
@@ -277,16 +270,17 @@
        FOOTER
        ====================================================== -->
   <footer class="site-footer">
-    <p>© 2025 Ilona van Oosbree — Portfolio. Gebouwd met ❤️ en pure HTML &amp; CSS.</p>
+    <p data-i18n-html="footer.text">© 2025 Ilona van Oosbree. Gebouwd met ❤️ en pure HTML &amp; CSS.</p>
+    <p><button class="lang-toggle footer-lang-btn" aria-label="Taal wisselen">English</button></p>
   </footer>
 
   <!-- ======================================================
        SCRIPTS
        ====================================================== -->
   <script src="krabbels.js"></script>
+  <script src="lang.js"></script>
 
   <style>
-    /* Visually hidden utility for accessible labels */
     .visually-hidden {
       position: absolute;
       width: 1px;

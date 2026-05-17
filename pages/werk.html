@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="nl"
+      data-title-nl="Mijn Werk: Ilona van Oosbree"
+      data-title-en="My Work: Ilona van Oosbree">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mijn Werk — Ilona van Oosbree</title>
+  <title>Mijn Werk: Ilona van Oosbree</title>
   <meta name="description" content="Projecten en werk van Ilona van Oosbree" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="icon" href="../images/ilona.jpg" type="image/jpeg" />
@@ -21,18 +23,18 @@
           <ul>
             <li><a href="../index.html">Ilona</a></li>
             <li><a href="#status">Online</a></li>
-            <li><a href="#" aria-label="Taal wisselen">English</a></li>
+            <li><a href="#" class="lang-toggle" aria-label="Taal wisselen">English</a></li>
           </ul>
           <img src="../images/ilona.jpg" alt="Profielfoto Ilona" class="banner-avatar" width="40" height="40" />
         </div>
       </div>
       <nav class="top-nav" aria-label="Secties">
         <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../index.html#profiel">Profiel</a></li>
-          <li><a href="werk.html" class="active" aria-current="page">Mijn werk</a></li>
-          <li><a href="fotos.html">Foto's</a></li>
-          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="../index.html" data-i18n="nav.home">Home</a></li>
+          <li><a href="werk.html" class="active" aria-current="page" data-i18n="nav.my-work">Mijn werk</a></li>
+          <li><a href="fotos.html" data-i18n="nav.photos">Foto's</a></li>
+          <li><a href="blog.html" data-i18n="nav.blogs">Blogs</a></li>
+          <li><a href="posters.html" data-i18n="nav.posters">Posters</a></li>
         </ul>
       </nav>
     </div>
@@ -40,11 +42,11 @@
 
   <!-- CONTENT -->
   <div class="page-wrapper">
-    <h1 class="page-title">Mijn Werk</h1>
+    <h1 class="page-title" data-i18n="nav.my-work">Mijn werk</h1>
 
     <div class="full-page-wrapper">
       <section class="work-wrapper" style="padding-bottom:1rem;" aria-label="Alle projecten">
-        <h2 class="section-heading">Projecten</h2>
+        <h2 class="section-heading" data-i18n="werk.section-title">Projecten</h2>
 
         <ul class="blog-posts-grid" style="grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));">
 
@@ -60,25 +62,25 @@
                 Credit Card
               </a>
             </h3>
-            <p style="font-size:0.8rem;text-align:center;color:#555;padding:0 0.5rem;">
+            <p style="font-size:0.8rem;text-align:center;color:#555;padding:0 0.5rem;" data-i18n="werk.credit-card-desc">
               Interactieve creditcard-animatie als CSS/JS experiment.
             </p>
-            <span class="blog-post-tag">Desktop only</span>
+            <span class="blog-post-tag" data-i18n="tag.desktop-only">Desktop only</span>
           </li>
 
           <li class="blog-post-item">
             <article class="blog-post-card">
-              <a href="blog-milledoni.html" aria-label="Milledoni blogpost lezen">
+              <a href="https://milledoni.nl/" target="_blank" rel="noopener noreferrer"
+                 aria-label="Milledoni website bekijken (opent in nieuw tabblad)">
                 <img src="../images/milledoni.webp" alt="Milledoni project" width="300" height="300" loading="lazy" />
               </a>
             </article>
             <h3 class="blog-post-title">
-              <a href="blog-milledoni.html">Milledoni</a>
+              <a href="https://milledoni.nl/" target="_blank" rel="noopener noreferrer">Milledoni</a>
             </h3>
-            <p style="font-size:0.8rem;text-align:center;color:#555;padding:0 0.5rem;">
+            <p style="font-size:0.8rem;text-align:center;color:#555;padding:0 0.5rem;" data-i18n="werk.milledoni-desc">
               AI-gestuurde gift-finder met SvelteKit-frontend.
             </p>
-            <span class="blog-post-tag">Blog</span>
           </li>
 
           <li class="blog-post-item">
@@ -93,7 +95,7 @@
                 Paer Studio
               </a>
             </h3>
-            <p style="font-size:0.8rem;text-align:center;color:#555;padding:0 0.5rem;">
+            <p style="font-size:0.8rem;text-align:center;color:#555;padding:0 0.5rem;" data-i18n="werk.paer-desc">
               Studio-website voor creatief bureau Paer Studio.
             </p>
           </li>
@@ -110,7 +112,7 @@
                 FDND Website
               </a>
             </h3>
-            <p style="font-size:0.8rem;text-align:center;color:#555;padding:0 0.5rem;">
+            <p style="font-size:0.8rem;text-align:center;color:#555;padding:0 0.5rem;" data-i18n="werk.fdnd-desc">
               Open-source curriculumsite voor FDND aan de HvA.
             </p>
           </li>
@@ -121,8 +123,10 @@
   </div>
 
   <footer class="site-footer">
-    <p>© 2025 Ilona van Oosbree — Portfolio. Gebouwd met ❤️ en pure HTML &amp; CSS.</p>
+    <p data-i18n-html="footer.text">© 2025 Ilona van Oosbree. Gebouwd met ❤️ en pure HTML &amp; CSS.</p>
+    <p><button class="lang-toggle footer-lang-btn" aria-label="Taal wisselen">English</button></p>
   </footer>
 
+  <script src="../lang.js"></script>
 </body>
 </html>
