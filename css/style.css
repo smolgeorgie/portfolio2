@@ -697,14 +697,27 @@ nav {
 }
 
 .blogs-list-page h1,
+.blogs-list-page h2,
 .photos-page h1,
-.posters-page h1 {
+.photos-page h2,
+.posters-page h1,
+.posters-page h2 {
   color: var(--section-heading-color);
   font-weight: bold;
   margin: 0 0 10px;
   font-size: 15px;
   border-bottom: 2px solid var(--border-color);
   padding-bottom: 5px;
+}
+
+.photos-page h3,
+.posters-page h3 {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--section-heading-color);
+  margin: 14px 0 4px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 3px;
 }
 
 /* Blog list */
@@ -818,6 +831,8 @@ nav {
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 6px;
   margin-top: 10px;
+  list-style: none;
+  padding: 0;
 }
 
 .photo-grid figure,

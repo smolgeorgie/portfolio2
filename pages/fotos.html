@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav aria-label="Hoofdnavigatie">
     <div class="nav-wrapper">
       <div class="banner-content">
@@ -40,30 +39,60 @@
     </div>
   </nav>
 
-  <!-- CONTENT -->
   <div class="page-wrapper">
     <h1 class="page-title" data-i18n="nav.photos">Foto's</h1>
 
     <div class="full-page-wrapper">
 
-      <!-- Tab sub-nav -->
       <nav class="tabs" aria-label="Content type">
         <a href="blog.html" class="tab-link" data-i18n="tab.blogs">📝 Blogs</a>
         <a href="fotos.html" class="tab-link active" aria-current="page" data-i18n="tab.photos">📷 Foto's</a>
         <a href="posters.html" class="tab-link" data-i18n="tab.posters">🎨 Posters</a>
       </nav>
 
-      <section class="photos-page" aria-label="Fotogalerij">
-        <h1 data-i18n="photos.section-title">Fotografie</h1>
-
-        <p style="font-size:0.9rem;color:#555;margin-bottom:1rem;" data-i18n="photos.description">
-          Ik ben hobbyist fotograaf met wat ervaring in bedrijfsfotografie. Hieronder een selectie van mijn werk.
-          Nieuw materiaal volgt binnenkort!
+      <section class="photos-page" aria-labelledby="photos-heading">
+        <h2 id="photos-heading" data-i18n="photos.section-title">Fotografie</h2>
+        <p data-i18n="photos.description">
+          Ik ben hobbyist fotograaf met wat ervaring in bedrijfsfotografie. Hieronder een selectie van mijn werk. Nieuw materiaal volgt binnenkort!
         </p>
 
-        <div class="photo-grid" aria-label="Fotogalerij">
-          <!-- Foto's volgen binnenkort -->
-        </div>
+        <section aria-labelledby="album-bedrijf">
+          <h3 id="album-bedrijf" data-i18n="photos.album-bedrijf">Bedrijfsfotografie</h3>
+          <ul class="photo-grid">
+            <li><figure><img src="../images/pre-wonen-logo.webp" alt="Pre-wonen logo ontwerp" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-logo-finished.webp" alt="Pre-wonen logo afgewerkt" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-menubord-logo.webp" alt="Menubord met Pre-wonen logo" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-eetruimte.webp" alt="Eetruimte Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-koelkast.webp" alt="Koelkast presentatie Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-buffet-voor.webp" alt="Buffet presentatie Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-%20buffetvoor-dichtbij-done.webp" alt="Buffet close-up Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-quincy-buffet.webp" alt="Quincy bij buffet Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-%20danny-buffet.webp" alt="Danny bij buffet Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-broodjes.webp" alt="Broodjes presentatie Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-%20brood-done.webp" alt="Brood presentatie Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-veggiewraps.webp" alt="Veggie wraps Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-vleesplankjes-done.webp" alt="Vleesplankjes Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-belichte-grabco.webp" alt="Belichte opname Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-belichte-grabco-2.webp" alt="Belichte opname 2 Pre-wonen" loading="lazy"></figure></li>
+            <li><figure><img src="../images/pre-wonen-%20plantjes.webp" alt="Plantjes decoratie Pre-wonen" loading="lazy"></figure></li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="album-hobby">
+          <h3 id="album-hobby" data-i18n="photos.album-hobby">Hobby</h3>
+          <ul class="photo-grid">
+            <li><figure><img src="../images/vacation1.webp" alt="Vakantie foto 1" loading="lazy"></figure></li>
+            <li><figure><img src="../images/vacation2.webp" alt="Vakantie foto 2" loading="lazy"></figure></li>
+            <li><figure><img src="../images/vacation3.webp" alt="Vakantie foto 3" loading="lazy"></figure></li>
+            <li><figure><img src="../images/vacation4.webp" alt="Vakantie foto 4" loading="lazy"></figure></li>
+            <li><figure><img src="../images/vacation5.webp" alt="Vakantie foto 5" loading="lazy"></figure></li>
+            <li><figure><img src="../images/vacation6.webp" alt="Vakantie foto 6" loading="lazy"></figure></li>
+            <li><figure><img src="../images/vacation7.webp" alt="Vakantie foto 7" loading="lazy"></figure></li>
+            <li><figure><img src="../images/vaction8.webp" alt="Vakantie foto 8" loading="lazy"></figure></li>
+            <li><figure><img src="../images/vacation9.webp" alt="Vakantie foto 9" loading="lazy"></figure></li>
+            <li><figure><img src="../images/vacation10.webp" alt="Vakantie foto 10" loading="lazy"></figure></li>
+          </ul>
+        </section>
 
       </section>
     </div>
