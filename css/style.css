@@ -838,10 +838,17 @@ nav {
 .photo-grid figure,
 .poster-grid figure {
   margin: 0;
-  background: #F0F6FF;
+  background: linear-gradient(90deg, #e8eef5 25%, #d4dfe9 50%, #e8eef5 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
   border: 1px solid var(--border-color);
   overflow: hidden;
   transition: border-color 0.15s;
+}
+
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
 }
 
 .photo-grid figure:hover,
