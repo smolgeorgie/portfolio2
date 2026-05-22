@@ -103,6 +103,33 @@
     <p><button class="lang-toggle footer-lang-btn" aria-label="Taal wisselen">English</button></p>
   </footer>
 
+  <dialog id="lightbox">
+    <button class="lightbox-close" aria-label="Sluiten">&#x2715;</button>
+    <img src="" alt="">
+  </dialog>
+
   <script src="../lang.js"></script>
+  <script>
+    (function () {
+      var dialog = document.getElementById('lightbox');
+      var img = dialog.querySelector('img');
+
+      document.querySelectorAll('.photo-grid img').forEach(function (thumb) {
+        thumb.addEventListener('click', function () {
+          img.src = thumb.src;
+          img.alt = thumb.alt;
+          dialog.showModal();
+        });
+      });
+
+      dialog.querySelector('.lightbox-close').addEventListener('click', function () {
+        dialog.close();
+      });
+
+      dialog.addEventListener('click', function (e) {
+        if (e.target === dialog) dialog.close();
+      });
+    })();
+  </script>
 </body>
 </html>

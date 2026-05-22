@@ -983,6 +983,54 @@ nav {
   }
 }
 
+.photo-grid img {
+  cursor: zoom-in;
+}
+
+dialog#lightbox {
+  border: none;
+  background: transparent;
+  padding: 0;
+  max-width: 95vw;
+  max-height: 95vh;
+  outline: none;
+}
+
+dialog#lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.88);
+  cursor: zoom-out;
+}
+
+dialog#lightbox img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  cursor: default;
+}
+
+.lightbox-close {
+  position: fixed;
+  top: 14px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  color: white;
+  width: 32px;
+  height: 32px;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
 /* Language toggle button in footer */
 .footer-lang-btn {
   background: none;
