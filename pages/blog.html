@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav aria-label="Hoofdnavigatie">
     <div class="nav-wrapper">
       <div class="banner-content">
@@ -40,13 +39,11 @@
     </div>
   </nav>
 
-  <!-- CONTENT -->
   <div class="page-wrapper">
     <h1 class="page-title">Blogs</h1>
 
     <div class="full-page-wrapper">
 
-      <!-- Tab sub-nav -->
       <nav class="tabs" aria-label="Content type">
         <a href="blog.html" class="tab-link active" aria-current="page" data-i18n="tab.blogs">📝 Blogs</a>
         <a href="fotos.html" class="tab-link" data-i18n="tab.photos">📷 Foto's</a>
@@ -55,7 +52,40 @@
 
       <section class="blogs-list-page" aria-label="Bloglijst">
         <ul class="blog-list" aria-label="Alle blogposts">
-          <!-- Blogs tijdelijk uitgeschakeld -->
+
+          <li class="blog-list-item">
+            <a href="blog-milledoni.html">
+              <img src="../images/milledoni.webp" alt="Milledoni" class="blog-thumb" width="75" height="75" loading="lazy" />
+              <div>
+                <h2 data-i18n="blog.milledoni.title">Milledoni: een AI-first cadeausite bouwen in SvelteKit</h2>
+                <p data-i18n="blog.milledoni.desc">AI-gestuurde cadeaufinder met SvelteKit en OpenAI integratie.</p>
+                <time datetime="2024-06-10">10 juni 2024</time>
+              </div>
+            </a>
+          </li>
+
+          <li class="blog-list-item">
+            <a href="blog-paerstudio.html">
+              <img src="../images/paerstudio.webp" alt="Paer Studio" class="blog-thumb" width="75" height="75" loading="lazy" />
+              <div>
+                <h2 data-i18n="blog.paer.title">Paer Studio: Samen bouwen aan een creatief bureau</h2>
+                <p data-i18n="blog.paer.desc">Studio-website voor creatief bureau Paer Studio.</p>
+                <time datetime="2025-03-10">10 maart 2025</time>
+              </div>
+            </a>
+          </li>
+
+          <li class="blog-list-item">
+            <a href="blog-fdnd.html">
+              <img src="../images/fdndwebsite.webp" alt="FDND Programma Website" class="blog-thumb" width="75" height="75" loading="lazy" />
+              <div>
+                <h2 data-i18n="blog.fdnd.title">FDND Programma Website</h2>
+                <p data-i18n="blog.fdnd.desc">Open-source curriculumsite voor FDND aan de HvA.</p>
+                <time datetime="2025-05-01">1 mei 2025</time>
+              </div>
+            </a>
+          </li>
+
         </ul>
       </section>
     </div>

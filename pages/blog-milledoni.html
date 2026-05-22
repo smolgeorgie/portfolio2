@@ -12,7 +12,6 @@
 </head>
 <body>
 
-  <!-- NAVIGATION -->
   <nav aria-label="Hoofdnavigatie">
     <div class="nav-wrapper">
       <div class="banner-content">
@@ -40,7 +39,6 @@
     </div>
   </nav>
 
-  <!-- CONTENT -->
   <div class="page-wrapper">
     <h1 class="page-title">Blog</h1>
     <div class="full-page-wrapper">
@@ -48,49 +46,94 @@
 
         <a href="blog.html" class="blog-back-link" data-i18n="blog.back">← Terug naar blogs</a>
 
-        <h1>Milledoni: AI Prompt Generator</h1>
-        <p class="post-meta">
-          <time datetime="2025-01-15">15 januari 2025</time> &bull; Ilona van Oosbree
-        </p>
+        <div data-i18n-html="blog.milledoni.content">
+          <article class="blogpost">
+            <header>
+              <h1>Milledoni: een AI-first cadeausite bouwen in SvelteKit</h1>
+              <p>
+                In deze blogpost vertel ik hoe ik samen met mijn team aan de Milledoni website heb gewerkt,
+                wat de vraag van de opdrachtgever was en hoe de AI-functie uiteindelijk in stand is gekomen.
+              </p>
+            </header>
 
-        <img src="../images/milledoni.webp" alt="Milledoni gift finder interface" class="post-hero" width="760" height="300" loading="eager" />
+            <section>
+              <h2>De vraag van de opdrachtgever</h2>
+              <p>
+                De vraag van onze opdrachtgever was het aanmaken van een websiteconcept.
+                De Milledoni website bestond eigenlijk al, maar de opdrachtgever was niet tevreden met het design.
+                Dit komt omdat veel mensen vastliepen op mobiel, en omdat de UI heel erg verouderd is.
+              </p>
+              <p>
+                Daarnaast was het de bedoeling dat de website AI-first runde.
+                Je hebt namelijk een AI-chat, die jij prompt meegeeft, en aan de hand van de prompt kiest hij passende cadeaus uit.
+                Bijvoorbeeld: <strong>"Ik zoek een cadeau voor een vriendin dat van koken houdt."</strong>
+              </p>
+              <p>
+                De vraag aan ons, was of wij het AI-first konden maken.
+                Dat de functionaliteit werkt van de lijst en dat we een gesprek kunnen voeren met de AI-chatbot.
+              </p>
+            </section>
 
-        <div class="post-body">
-          <p>
-            Milledoni is een cadeaufinder-platform waarbij gebruikers op basis van een paar simpele vragen
-            een perfect cadeau gepresenteerd krijgen. Mijn bijdrage aan dit project was het bouwen van een
-            AI-gestuurde prompt-generator die de gebruikersinput vertaalt naar gerichte zoekopdrachten.
-          </p>
+            <img src="../images/milledoni-aiprompt.webp" alt="Milledoni AI Chatbot">
 
-          <h2>De uitdaging</h2>
-          <p>
-            Het doel was om een interface te bouwen die vlot en intuïtief aanvoelt, vergelijkbaar met het
-            gesprek dat je met een kennis hebt als je om cadeautips vraagt. Tegelijkertijd moesten de
-            resultaten relevant en niet te generiek zijn.
-          </p>
+            <section>
+              <h2>Van VueJs naar Svelte 5 + SvelteKit</h2>
+              <p>
+                De opdrachtgever had al gewerkt aan de AI-chatbot, maar dit was in VueJs,
+                een framework wat wij niet gebruiken. Wij gebruiken namelijk Svelte 5 + SvelteKit.
+                Het eerste knelpunt was al in zicht: het maken van de AI-chatbot met een nieuw framework.
+                En het vraagstuk: hoe zetten wij de AI-functie op de juiste manier op, en hoe gaan we het werkend maken?
+              </p>
+            </section>
 
-          <img src="../images/milledoni-aiprompt.webp" alt="AI prompt interface in Milledoni" loading="lazy" />
+            <section>
+              <h2>De opzet: AI koppelen aan de cadeaulijst</h2>
+              <p>
+                We hebben eerst de opzet gemaakt: het toevoegen van de OpenAI API key aan ons project,
+                en vanuit daar kijken hoe we dit konden connecten aan de lijst.
+                En het belangrijkste: welke prompts moeten we meegeven om de chatbot een bepaalde rol te laten aanhouden.
+              </p>
+              <p>
+                Er waren meerdere vragen, en meerdere knelpunten waar we tegenaan liepen.
+                Het was complexe code die we nog nooit eerder hadden gebruikt.
+                Een nieuwe uitdaging.
+              </p>
+            </section>
 
-          <h2>Technische aanpak</h2>
-          <p>
-            We maakten gebruik van een Large Language Model om de gebruikersinput te verrijken tot een
-            gestructureerde zoekopdracht. De frontend is gebouwd in SvelteKit, waarbij progressieve
-            enhancement centraal stond, zodat de basisflow ook werkt zonder JavaScript.
-          </p>
+            <section>
+              <h2>De AI als vriendelijke helper</h2>
+              <p>
+                We hebben samen gekeken naar de functies die we wilden voor de AI-prompt,
+                en de taal die we over willen laten brengen.
+                Zo hebben we met de opdrachtgever gepraat over de toon en de stijl.
+                Een vriendelijke helper, met een doelgerichte vraag: <strong>"Wat zoek je?"</strong>
+              </p>
+              <p>
+                De AI-chatbot helpt de gebruiker om gericht te zoeken naar cadeaus,
+                zonder dat je zelf eindeloos door alle producten hoeft te scrollen.
+                De prompt stuurt de AI aan om concrete vragen te stellen en passende cadeaus uit de lijst te kiezen.
+                Hier onder kan je ook zien dat de foto's van de cadeaus worden weergegeven in de zoekresultaten aan de hand van de prompt die wordt meegegeven.
+              </p>
+            </section>
 
-          <img src="../images/milledoni-searchresult.webp" alt="Zoekresultaten in Milledoni" loading="lazy" />
+            <img src="../images/milledoni-searchresult.webp" alt="Milledoni AI Chatbot">
 
-          <h2>Wat ik leerde</h2>
-          <p>
-            Dit project heeft me veel geleerd over prompt engineering en hoe je AI als hulpmiddel
-            in een UX-flow integreert zonder dat het de gebruiker overweldigt. De fijnste les:
-            minder instructie, meer context. Een goed geformuleerde context levert veruit de beste resultaten.
-          </p>
-
-          <p>
-            Wil je de live versie bekijken of meer weten? Neem dan gerust
-            <a href="mailto:ilonavanoosbree@live.nl?subject=Milledoni%20project">contact op</a>.
-          </p>
+            <section>
+              <h2>Mijn rol en het resultaat</h2>
+              <p>
+                In dit project heb ik meegedacht over de opzet van de AI-functie,
+                de prompts geschreven en geholpen met het koppelen van de API aan de cadeaulijst in SvelteKit.
+                Ook heb ik gelet op hoe de flow voor de gebruiker aanvoelt:
+                van het stellen van de vraag aan de chatbot tot het zien van de cadeaus die hij teruggeeft.
+              </p>
+              <p>
+                Ik heb dit zelf gepresenteerd aan de opdrachtgever,
+                en zij waren zeer tevreden met de functionaliteit van de AI-functie.
+                De AI-chatbot werkt, de lijst reageert op de antwoorden,
+                en de site is een stuk moderner en gebruiksvriendelijker geworden dan de oude versie.
+              </p>
+            </section>
+          </article>
         </div>
 
       </article>
